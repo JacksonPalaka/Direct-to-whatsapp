@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Whatsapp chat</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>This app is made to redirect you to anyone's whatsapp</h1>
+        <input type="number" placeholder="Input your number" name="whatsapp" id="whatsapp">
+        <button onclick='openLinks()'>Go to Whatsapp</button>
+    </div>
+</body>
+<script>
+    function openLinks(){
+        const number= document.querySelector('#whatsapp').value;
+if(number){
+    const url=`https://wa.me/91${number}`
+    window.open(url)
+}
+else{
+    alert('enter a valid number')
+}
+    }
+</script>
+</html>
